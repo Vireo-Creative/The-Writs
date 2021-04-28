@@ -1,5 +1,6 @@
 @import 'variables';
 
+// Reset
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,7 +13,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  line-height: 1.4;
+  line-height: 1.5;
   background-color: $black;
   color: $white;
 }
@@ -24,11 +25,16 @@ h1 {
 
 h2 {
   font-size: 3em;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h3 {
-  font-size: 2em
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 // Links
@@ -44,7 +50,7 @@ a {
 
 .button {
   font-family: 'Arial', sans-serif;
-  font-size: 0.8em;
+  font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
   display: inline-block;

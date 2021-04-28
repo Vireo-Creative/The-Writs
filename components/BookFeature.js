@@ -2,25 +2,28 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/BookFeature.module.scss'
 
-const BookFeature = () => {
+const BookFeature = (props) => {
   return (
     <div className={styles.section}>
       <div className={styles.content}>
-        <h2>The Book, <br />The Legend.</h2>
-        <p>Step right up, read all about it – my notebook, in the papery flesh..y paper.</p>
-        <Link href="/the-book">
-          <a className="button">Let's See</a>
+        <h2>{props.title}</h2>
+        <p>{props.subtitle}</p>
+        <Link href={props.link}>
+          <a className="button">{props.button}</a>
         </Link>
       </div>
 
-      <div className={styles.image}>
-        <Image
-          src="/sparks-from-the-dark-cover.jpg"
-          alt="test"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+      <Link href={props.link}>
+        <a className={styles.image}>
+          <Image
+            src={props.image}
+            alt={props.title}
+            layout="fill"
+            objectFit="cover"
+          />
+        </a>
+      </Link>
+      
     </div>
   )
 }
