@@ -1,0 +1,20 @@
+// Color
+$primary: #eb0000;
+$black: #000;
+$white: #FFF;
+
+// Sizes
+$site-width: 1440px;
+// Break Points
+$bp-lg: 968px;
+
+// Styles
+$border: 5px solid $white;
+
+// Media queries
+// Large devices
+@mixin lg {
+  @media (min-width: #{$bp-lg}) {
+      @content;
+  }
+}

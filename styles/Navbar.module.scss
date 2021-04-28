@@ -1,0 +1,48 @@
+@import 'variables';
+
+.navbar {
+  padding: 3vh 0;
+
+  &Wrap {
+    width: 100%;
+    max-width: $site-width;
+    padding: 0 5vw;
+    margin: 0 auto;
+
+    @include lg {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.brand {
+  display: inline-block;
+  line-height: 1;
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-style: italic;
+    color: rgba($white, 0.7);
+  }
+}
+
+.nav {
+  a {
+    display: block;
+
+    @include lg {
+      padding: 1rem;
+      display: inline-block;
+    }
+  }
+}
+.active {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
