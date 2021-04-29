@@ -1,43 +1,26 @@
 import Link from 'next/link'
-import { useRouter } from "next/router";
-import navStyles from '../styles/components/Navbar.module.scss'
+import { useRouter } from 'next/router'
+import styles from '../styles/components/Navbar.module.scss'
+import navItems from '../data/nav.js'
 
 const Navbar = () => {
   const router = useRouter();
-  const navItems = [
-    {
-      name: 'The Book, The Legend.',
-      slug: '/the-book'
-    },
-    {
-      name: 'the little words',
-      slug: '/little-writs'
-    },
-    {
-      name: 'Blarg',
-      slug: '/blarg'
-    },
-    {
-      name: 'zine',
-      slug: '/zine'
-    }
-  ]
-
+  
   return (
-    <div className={navStyles.navbar}>
-      <div className={navStyles.navbarWrap}>
+    <div className={styles.navbar}>
+      <div className={styles.navbarWrap}>
 
         <Link href="/">
-          <a className={navStyles.brand}>
+          <a className={styles.brand}>
             <h1>The Writs</h1>
             <p>A site forwords,</p>
           </a>
         </Link>
 
-        <nav className={navStyles.nav}>
+        <nav className={styles.nav}>
           {navItems.map(({ slug, name}) => (
             <Link href={slug} key={name}>
-              <a className={router.pathname == slug ? navStyles.active : ""}>{name}</a>
+              <a className={router.pathname == slug ? styles.active : ""}>{name}</a>
             </Link>
           ))}
         </nav>

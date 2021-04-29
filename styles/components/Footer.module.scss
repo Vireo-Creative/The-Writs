@@ -1,0 +1,37 @@
+@import '../variables';
+
+.footer {
+  padding: 2vh 0;
+
+  @include lg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.nav {
+  a {
+    display: block;
+
+    @include lg {
+      display: inline-block;
+      padding: 1rem;
+    }
+  }
+
+}
+
+.active {
+  text-decoration: line-through;
+  opacity: 0.5;
+
+  &:hover {
+    color: $white;
+  }
+}

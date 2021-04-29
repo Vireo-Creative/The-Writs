@@ -6,7 +6,7 @@
 
   @include lg {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 100px;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 }

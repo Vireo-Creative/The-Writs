@@ -1,11 +1,12 @@
-import Head from 'next/head';
-import Navbar from "./Navbar";
+import Head from 'next/head'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 export default function Layout(props) {
   const {children} = props;
   const meta = {
     title: 'The Writs',
-    description: `A site forwords`,
+    description: 'A site forwords',
   };
 
   return (
@@ -24,6 +25,7 @@ export default function Layout(props) {
       <main>
         {children}
       </main>
+      <Footer />
 
     </div>
   );
