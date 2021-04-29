@@ -6,8 +6,8 @@ const TheBook = () => {
     <Layout>
       <div className="container">
         
-        <div className="">
-          <div className="">
+        <div>
+          <div>
             <h1>The Book,<br /> The Legend.</h1>
             <p>There were too many words in this old notebook that I enjoyed, and the book would have otherwise sat on the shelf forever, unread.</p>
             <p>So I printed it.</p>
