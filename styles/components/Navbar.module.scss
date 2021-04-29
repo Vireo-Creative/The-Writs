@@ -31,23 +31,3 @@
     color: rgba($white, 0.7);
   }
 }
-
-.nav {
-  a {
-    display: block;
-
-    @include lg {
-      padding: 1rem;
-      display: inline-block;
-    }
-  }
-}
-
-.active {
-  text-decoration: line-through;
-  opacity: 0.5;
-
-  &:hover {
-    color: $white;
-  }
-}

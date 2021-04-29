@@ -1,0 +1,40 @@
+.burger {
+  position: absolute;
+  right: 5vw;
+  top: 3vh;
+  background: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 7px;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.nav {
+  display: none;
+  
+  @include lg {
+    display: block;
+  }
+
+  a {
+    display: block;
+
+    @include lg {
+      padding: 1rem;
+      display: inline-block;
+    }
+  }
+
+}
+
+.activePage {
+  text-decoration: line-through;
+  opacity: 0.5;
+
+  &:hover {
+    color: $white;
+  }
+}

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/components/Footer.module.scss'
+import Styles from '../styles/components/Footer.module.scss'
 import navItems from '../data/nav.js'
 import { useRouter } from 'next/router'
 
@@ -9,16 +9,16 @@ const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className={styles.footer}>
+        <div className={Styles.footer}>
 
           <Link href="/">
-            <a className={styles.logo}>The Writs</a>
+            <a className={Styles.logo}>The Writs</a>
           </Link>
 
-          <nav className={styles.nav}>
+          <nav className={Styles.nav}>
             {navItems.map(({ slug, name}) => (
               <Link href={slug} key={name}>
-                <a className={router.pathname == slug ? styles.active : ""}>{name}</a>
+                <a className={router.pathname == slug ? "activePage" : ""}>{name}</a>
               </Link>
             ))}
           </nav>

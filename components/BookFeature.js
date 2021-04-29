@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../styles/components/BookFeature.module.scss'
+import Styles from '../styles/components/BookFeature.module.scss'
 
 const BookFeature = (props) => {
   return (
-    <div className={styles.section}>
-      <div className={styles.content}>
+    <div className={Styles.section}>
+      <div className={Styles.content}>
         <h2>{props.title}</h2>
         <p>{props.subtitle}</p>
         <Link href={props.link}>
@@ -14,7 +14,7 @@ const BookFeature = (props) => {
       </div>
 
       <Link href={props.link}>
-        <a className={styles.image}>
+        <a className={Styles.image}>
           <Image
             src={props.image}
             alt={props.title}
