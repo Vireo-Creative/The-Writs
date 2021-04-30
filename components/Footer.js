@@ -7,9 +7,9 @@ const Footer = () => {
   const router = useRouter();
 
   return (
-    <footer>
+    <footer className={Styles.footer}>
       <div className="container">
-        <div className={Styles.footer}>
+        <div className={Styles.footerWrap}>
 
           <Link href="/">
             <a className={Styles.logo}>The Writs</a>

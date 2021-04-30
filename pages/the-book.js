@@ -6,7 +6,7 @@ const TheBook = () => {
   return (
     <Layout>
       <div className="container">
-        
+
         <div className={Styles.intro}>
           <div className={Styles.introContent}>
             <h1>The Book,<br /> The Legend.</h1>
@@ -17,7 +17,6 @@ const TheBook = () => {
             so I called it something else.</p>
             <p>It is on amazon, <br />
             or I have copies of it.</p>
-              
             <div className="buttons">
               <a href="#/" className="button">Paperback</a>
               <a href="#/" className="button">eBook</a>
