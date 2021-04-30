@@ -18,8 +18,8 @@ const BookFeature = (props) => {
           <Image
             src={props.image}
             alt={props.title}
-            layout="fill"
-            objectFit="cover"
+            height="1612px"
+            width="1080px"
           />
         </a>
       </Link>

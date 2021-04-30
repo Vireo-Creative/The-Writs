@@ -39,4 +39,9 @@
   z-index: 12;
   width: 100%;
   height: 600px;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
 }

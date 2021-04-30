@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import Styles from '../styles/components/Navbar.module.scss'
 import navItems from '../data/nav.js'
 
