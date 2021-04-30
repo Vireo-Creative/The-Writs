@@ -1,0 +1,14 @@
+@import '../variables';
+
+.intro {
+  @include lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 5vw;
+  }
+}
+
+.introImage {
+  border: $border;
+}

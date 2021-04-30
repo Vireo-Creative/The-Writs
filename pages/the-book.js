@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import Layout from '../components/Layout';
+import Styles from '../styles/pages/TheBook.module.scss'
 
 const TheBook = () => {
   return (
     <Layout>
       <div className="container">
         
-        <div>
-          <div>
+        <div className={Styles.intro}>
+          <div className={Styles.introContent}>
             <h1>The Book,<br /> The Legend.</h1>
             <p>There were too many words in this old notebook that I enjoyed, and the book would have otherwise sat on the shelf forever, unread.</p>
             <p>So I printed it.</p>
@@ -23,12 +24,14 @@ const TheBook = () => {
             </div>
           </div>
 
-          <Image
-            src="/sparks-from-the-dark-cover.jpg"
-            alt="Sparks from the dark book cover"
-            height="1612px"
-            width="1080px"
-          />
+          <figure className={Styles.introImage}>
+            <Image
+              src="/sparks-from-the-dark-cover.jpg"
+              alt="Sparks from the dark book cover"
+              height="1612px"
+              width="1080px"
+            />
+          </figure>
         </div>
 
       </div>

@@ -10,7 +10,7 @@ export default function Layout(props) {
   };
 
   return (
-    <div className="page">
+    <>
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -26,7 +26,6 @@ export default function Layout(props) {
         {children}
       </main>
       <Footer />
-
-    </div>
+    </>
   );
 }
